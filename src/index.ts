@@ -21,11 +21,14 @@ import {
   SFCBlock,
   SFCTemplateCompileOptions,
   SFCScriptCompileOptions,
+  registerTS,
 } from '@vue/compiler-sfc'
 import { selectBlock } from './select'
 import { genHotReloadCode } from './hotReload'
 import { genCSSModulesCode } from './cssModules'
 import { formatError } from './formatError'
+
+registerTS(() => require('typescript'))
 
 import VueLoaderPlugin from './plugin'
 import { canInlineTemplate } from './resolveScript'
