@@ -58,7 +58,6 @@ export function resolveScript(
         id: scopeId,
         isProd,
         inlineTemplate: enableInline,
-        refSugar: options.refSugar,
         babelParserPlugins: options.babelParserPlugins,
         templateOptions: {
           ssr: isServer,
@@ -66,7 +65,7 @@ export function resolveScript(
           compilerOptions: options.compilerOptions,
           transformAssetUrls: options.transformAssetUrls || true,
         },
-	    fs: options.fs
+        fs: options.fs,
       })
     } catch (e) {
       loaderContext.emitError(e)
