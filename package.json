@@ -1,6 +1,6 @@
 {
   "name": "@threebow/vue-loader",
-  "version": "16.6.1",
+  "version": "16.6.2",
   "license": "MIT",
   "author": "Evan You",
   "main": "dist/index.js",
