@@ -66,6 +66,7 @@ export function resolveScript(
           compilerOptions: options.compilerOptions,
           transformAssetUrls: options.transformAssetUrls || true,
         },
+	    fs: options.fs
       })
     } catch (e) {
       loaderContext.emitError(e)

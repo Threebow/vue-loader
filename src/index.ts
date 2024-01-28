@@ -47,6 +47,12 @@ export interface VueLoaderOptions {
   appendExtension?: boolean
 
   isServerBuild?: boolean
+
+  fs?: {
+    fileExists(file: string): boolean
+    readFile(file: string): string | undefined
+    realpath?(file: string): string
+  }
 }
 
 let errorEmitted = false
